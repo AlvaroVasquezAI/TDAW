@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <title>Mi ejemplo de tienda de arte</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <!-- las tres siguientes líneas son un truco para obtener elementos semánticos de HTML5 que funcionan en versiones de Internet Explorer antiguas -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Aquí empieza el encabezado principal que se mantendrá en todas las páginas del sitio web -->
+    <header>
+      <h1>Mi ejemplo de tienda de arte</h1>
+    </header>
+
+    <nav>
+        <a href="">Inicio</a>|
+        <a href="">Artista</a>|
+        <a href="">Obras de arte</a>|
+        <a href="">Sobre nosotros</a>|
+        <a href="">Búsqueda</a>|
+     </nav>
+
+    <!-- Aquí está el contenido principal de nuestra página -->
+    <main>
+
+      <!-- Contiene un artículo -->
+      <article>
+        <h2>Mademoiselle Caroline Rivère</h2>
+
+        <em>
+          de
+          <a href="">Jean-Auguste-Dominique Ingres</a>
+        </em>
+        
+        <figure>
+          <a href="images3/06010-large.jpg">
+            <img src="images3/06010-medium.jpg" alt="Jean-Auguste-Dominique Ingres" title="Jean-Auguste-Dominique">
+          </a>
+        </figure>
+        <div title="Información sobre la imagen">
+          <p>El retrato de Mademoiselle Caroline Rivière fue pintado por el artista Neoclásico francés Jean Auguste Dominique Ingres, y hoy esta expuesto en el Louvre. Es el tercero de tres retratos de la familia Rivierè que el artista pintó ese año.
+            <br>
+            <br>
+            Fecha: 1806 <br>
+            Técnica: Oléo sobre lienzo <br>
+            Dimensiones: 100 x 70 cm <br>
+            Hogar: Musèe do Louvre Paris <br>
+          </p>
+        </div>
+        
+        <div>
+          <img src="images3/add-to-basket_btn.png">
+          <img src="images3/add-to-favorites_btn.png">
+        </div>
+        
+        <div>
+          Compartir:
+          <a href=""><img src="images3/email_16.png" alt="email" title="Compartir por correo electrónico"></a>
+          <a href=""><img src="images3/twitter_16.png" alt="twitter" title="Compartir en twitter"></a>
+          <a href=""><img src="images3/facebook_16.png" alt="facebook" title="Compartir en facebook"></a>
+          <a href=""><img src="images3/sharethis_16.png" alt="sharethis" title="Compartir en sharethis"></a>
+        </div>
+
+        <h3>Pinturas relacionadas</h3>
+
+        <div>
+          <span><a href="#"><img src="images3/06020.jpg" alt="05" title="06020"></a></span>
+          <span><a href="#"><img src="images3/07020.jpg" alt="07" title="07020"></a></span>
+          <span><a href="#"><img src="images3/13030.jpg" alt="13" title="13030"></a></span>
+          <span><a href="#"><img src="images3/05030.jpg" alt="05" title="05030"></a></span>
+        </div>
+        
+      </article>
+
+      <!-- el contenido aparte también se puede anidar dentro del contenido principal -->
+      <aside>
+        <h3>Revisiones</h3>
+
+        <h4 style="margin-bottom: 0px;">Amo esta pintura</h4>
+        <div>
+          John Smith
+          <a href=""><img src="images3/star-orange.png" alt="star-orange" title="star-orange"></a>
+          <a href=""><img src="images3/star-orange.png" alt="star-orange" title="star-orange"></a>
+          <a href=""><img src="images3/star-orange.png" alt="star-orange" title="star-orange"></a>
+          <a href=""><img src="images3/star-orange.png" alt="star-orange" title="star-orange"></a>
+          <a href=""><img src="images3/star-white.png" alt="star-white" title="star-white"></a>
+        </div>
+        <small>Loren ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus sit amet ipsum cursus placerat nec vel enim. Aliquam justo tortor, euismod quis facilisis ullamcorper, consequent sed eros</small>
+
+        <hr>
+
+        <h4 style="margin-bottom: 0px;">Esta bien</h4>
+        <div>
+          Jane Doe
+          <a href=""><img src="images3/star-orange.png" alt="star-orange" title="star-orange"></a>
+          <a href=""><img src="images3/star-orange.png" alt="star-orange" title="star-orange"></a>
+          <a href=""><img src="images3/star-orange.png" alt="star-orange" title="star-orange"></a>
+          <a href=""><img src="images3/star-white.png" alt="star-white" title="star-white"></a>
+          <a href=""><img src="images3/star-white.png" alt="star-white" title="star-white"></a>
+        </div>
+        <br>
+
+        <small>Quisque vitae ipsum quis risus sagittis sollicitudin. Nam elementum ipsum malesuada mi sagittis hendrerit</small>
+
+        <hr>
+      </aside>
+
+    </main>
+
+    <!-- Y aquí está nuestro pie de página principal que se utiliza en todas las páginas de nuestro sitio web -->
+    <footer>
+      <p id = "home">
+        <a href="#">Inicio</a> | 
+        <a href="#">Obras de arte</a> | 
+        <a href="#">Artistas</a> | 
+        <a href="#">Acerca de nosostros</a> <br>
+      </p>
+      <em>Copyright &copy; <time>2022</time> Mi ejemplo de tienda de arte</em>
+    </footer>
+
+  </body>
+</html>

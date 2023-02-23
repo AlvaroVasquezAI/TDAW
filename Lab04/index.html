@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="" method="get">
+        <p>
+            Nombre:<input type="text" name="nombre" id="nombre" maxlength="50" required />
+        </p>
+        
+        <p>
+            Apellidos: <input type="text" name="apellidos" maxlength="50" required/>
+        </p>
+
+        <p>
+            Sexo: <input type="radio" value="h" /> hombre <input type="radio" name="sexo" value="m" /> mujer
+        </p>
+
+        <p>
+            Correo: <input type="text" name="correo" maxlength="100" />
+        </p>
+
+        <p>
+            <input type="checkbox" name="info" checked="checked" /> Deseo recibir informacion sobre novedades y ofertas
+        </p>
+
+        <p>
+            <input type="checkbox" name="condiciones" /> Deseo haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar"/>
+        </p>
+
+    </form>
+
+    <form method="post" action="">
+        <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+            Elija una fecha:<input type="date"> <br />
+            Elija un archivpo:<input type="file" value="Escoger"> <br />
+            <input type="radio" name="procesador" value="procesaoramd"> AMD
+            <input type="radio" name="procesador" value="procesadorintel_i5"> Intel i5
+            <input type="radio" name="procesador" value="procesadorintel_i7"> Intel i7
+        </fieldset>
+
+        <fieldset>
+            <legend> Indique sus preferencias por favor</legend>
+            <input type="radio" name="asignatura" value="asignaturamatematicas"> Matematicas
+            <input type="radio" name="asignatura" value="asignaturahistoria"> Historia
+            <input type="radio" name="asignatura" value="asignaturageografia"> Geografia
+            <input type="radio" name="asignatura" value="asignaturalengua"> Lengua
+            <br />
+            Nombre<input type="text" name="nombre" required> <br /> 
+            Apellidos<input type="text" name="apellidos" required> <br />
+            Direccion<input type="text" name="direccion" required> <br />
+            <br />
+            Elija un color:<input type="color"> <br />
+            <textarea rows="6" cols="=59">Utilice este cuadro para escribir</textarea> <br />
+            Elija una fecha:<input type="date"> <br />
+            <selec name="idioma">
+                <option value="ingles">Ingles</option>
+                <option value="aleman">Aleman</option>
+                <option value="frances">Frances</option>
+            </selec>
+            <br />
+            Elija una hora:<input type="time"> <br />
+            <input type="checkbox" name="sexo" value="sexomujer"> Mujer
+            <input type="checkbox" name="sexo" value="sexohombre"> hombre
+            <br />
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+</body>
+</html>
