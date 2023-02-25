@@ -1,81 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reporte de la practica</title>
 </head>
+
 <body>
-    <h1>Formulario de registro</h1>
-    <form action="" method="get">
-        <p>
-            Nombre:<input type="text" name="nombre" id="nombre" maxlength="50" required />
-        </p>
-        
-        <p>
-            Apellidos: <input type="text" name="apellidos" maxlength="50" required/>
-        </p>
-
-        <p>
-            Sexo: <input type="radio" value="h" /> hombre <input type="radio" name="sexo" value="m" /> mujer
-        </p>
-
-        <p>
-            Correo: <input type="text" name="correo" maxlength="100" />
-        </p>
-
-        <p>
-            <input type="checkbox" name="info" checked="checked" /> Deseo recibir informacion sobre novedades y ofertas
-        </p>
-
-        <p>
-            <input type="checkbox" name="condiciones" /> Deseo haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos
-        </p>
-
-        <p>
-            <input type="submit" value="Enviar"/>
-        </p>
-
-    </form>
-
-    <form method="post" action="">
+    <form action="" method="post">
         <fieldset>
-            <legend>Indique sus preferencias por favor</legend>
-            Elija una fecha:<input type="date"> <br />
-            Elija un archivpo:<input type="file" value="Escoger"> <br />
-            <input type="radio" name="procesador" value="procesaoramd"> AMD
-            <input type="radio" name="procesador" value="procesadorintel_i5"> Intel i5
-            <input type="radio" name="procesador" value="procesadorintel_i7"> Intel i7
-        </fieldset>
-
-        <fieldset>
-            <legend> Indique sus preferencias por favor</legend>
-            <input type="radio" name="asignatura" value="asignaturamatematicas"> Matematicas
-            <input type="radio" name="asignatura" value="asignaturahistoria"> Historia
-            <input type="radio" name="asignatura" value="asignaturageografia"> Geografia
-            <input type="radio" name="asignatura" value="asignaturalengua"> Lengua
-            <br />
-            Nombre<input type="text" name="nombre" required> <br /> 
-            Apellidos<input type="text" name="apellidos" required> <br />
-            Direccion<input type="text" name="direccion" required> <br />
-            <br />
-            Elija un color:<input type="color"> <br />
-            <textarea rows="6" cols="=59">Utilice este cuadro para escribir</textarea> <br />
-            Elija una fecha:<input type="date"> <br />
-            <selec name="idioma">
-                <option value="ingles">Ingles</option>
-                <option value="aleman">Aleman</option>
-                <option value="frances">Frances</option>
-            </selec>
-            <br />
-            Elija una hora:<input type="time"> <br />
-            <input type="checkbox" name="sexo" value="sexomujer"> Mujer
-            <input type="checkbox" name="sexo" value="sexohombre"> hombre
-            <br />
-            <input type="submit" value="Enviar">
+            <legend>Detalles de la foto</legend>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <p>Titulo</p>
+                            <p><input type="text" name="titulo" id="titulo" required></p>
+                            <p>Descripcion</p>
+                            <textarea name="Descripcion" cols="30" rows="10"> Descripcion</textarea>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <p>Continente</p>
+                            <p>
+                                <select name="Continente">
+                                    <option value="Seleccionar continente">Selecciona un continente</option>
+                                    <option value="Africa">Africa</option>
+                                    <option value="Asia">Asia</option>
+                                    <option value="Europa">Europa</option>
+                                    <option value="Norte America">Norte america</option>
+                                    <option value="Sur America">Sur america</option>
+                                </select>
+                            </p>
+                            <p>Pais</p>
+                            <p>
+                                <select name="Pais">
+                                    <option value="País">Selecciona un país</option>
+                                    <option value="Canada">Cánada</option>
+                                    <option value="Mexico">México</option>
+                                    <option value="EU">Estados Unidos</option>
+                                </select>
+                            </p>
+                            <p>Ciudad</p>
+                            <input list="Ciudades" name="Ciudad" id="Ciudad">
+                            <datalist id="Ciudades">
+                                <option value="Calgary">Calgary</option>
+                                <option value="Montreal">Montreal</option>
+                                <option value="Toronto">Toronto</option>
+                                <option value="Vancouver">Vancouver</option>
+                                <option value="Tlaxcala">Tlaxcala</option>
+                            </datalist>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p>Copyright?</p>
+                            <p><input type="radio" name="C" value="T">Todos los derechos reservados</p>
+                            <p><input type="radio" name="C" value="CC">Crative Commons</p>
+                            <p>Licencias Creative Commons</p>
+                            <p><input type="checkbox" value="A">Atribución</p>
+                            <p><input type="checkbox" value="NC">No comercial</p>
+                            <p><input type="checkbox" value="NHTD">No hay trabajos derivativos</p>
+                            <p><input type="checkbox" value="CPI">Compartir por igual</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <p>Acepto la licencia de software <input type="checkbox" name="Licencias" value="Licencia">
+                            </p>
+                            <p>Califica esta foto: </p>
+                            <p><input type="number" name="Calificacion" id="Calificacion"></p>
+                            <p>Colecion de color</p>
+                            <p><input type="color"></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p>Fecha de toma:</p>
+                            <p><input type="date" name="fecha" id="fecha"></p>
+                            <p>Hora de toma</p>
+                            <p><input type="time" name="hora" id=""></p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </fieldset>
     </form>
-
 </body>
+
 </html>
