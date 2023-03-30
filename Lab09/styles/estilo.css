@@ -1,0 +1,213 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: row;
+}
+
+hr {
+  width: 95%;
+}
+
+@media (max-width: 600px) {
+  .Centro {
+    width: 100vw;
+  }
+  .BarraIzquierda {
+    display: none;
+  }
+  .BarraDerecha {
+    display: none;
+  }
+}
+
+.navigationBar {
+  background-color: #06334f;
+  display: flex;
+  flex-direction: row;
+  padding: 0.2vw 5vw;
+}
+.navigationBar ul {
+  list-style: none;
+  margin: 1vw;
+}
+.navigationBar ul li {
+  display: inline;
+}
+.navigationBar a,
+.navigationBar a::after {
+  text-decoration: none;
+  color: white;
+}
+.navigationBar > a {
+  font-size: max(1.4vw, 20px);
+  font-weight: bold;
+  margin: 0.75vw;
+}
+.navigationBar li > a {
+  margin: 0 0.75vw;
+  font-size: max(1vw, 14px);
+}
+/*Centro*/
+.center {
+  width: 65%;
+}
+.data {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#bill {
+  background-color: transparent;
+  padding-top: 10px;
+  padding-left: 30px;
+  font-size: max(1.5vw, 12px);
+}
+.billing {
+  background-color: transparent;
+  padding-left: 3%;
+  padding-right: 3%;
+  display: flex;
+  flex-direction: row;
+  font-size: max(1.1vw, 12px);
+  justify-content: space-between;
+}
+.secondBar {
+  background-color: transparent;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: max(1vw, 10px);
+}
+
+.books {
+  background-color: transparent;
+  font-size: max(1.1vw, 10px);
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.sentClient {
+  background-color: #3f9fd9;
+  width: 16%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  margin-left: 3%;
+  color: white;
+  font-size: max(1.1vw, 10px);
+  min-width: 100px;
+}
+.sentClient a,
+.sentClient a::after {
+  color: white;
+  text-decoration: none;
+}
+/*Izquierda*/
+.left {
+  width: 14%;
+}
+.leftBar {
+  background-color: transparent;
+}
+.leftBar ul {
+  list-style: none;
+}
+.person {
+  font-size: max(1.1vw, 10px);
+  background-color: #edebe1;
+  padding: 8%;
+  color: #b5a034;
+  margin: 5% 2%;
+}
+.activities {
+  font-size: max(1.1vw, 10px);
+  background-color: #f5f5f5;
+  margin: 5% 2%;
+  padding: 7% 7%;
+  border: 1pt solid #e9e9e9;
+}
+.activities li {
+  margin: 2px 0px;
+}
+.messages{
+  font-size: max(0.9vw, 10px);
+  background-color: #f5f5f5;
+  margin: 5% 2%;
+  padding: 2%;
+  border: 1pt solid #e9e9e9;
+}
+.messages img {
+  float: left;
+  margin-left: 8px;
+  margin-right: 10px;
+}
+.messages li {
+  margin: 5% 0;
+}
+.changes {
+  background-color: transparent;
+  font-size: max(1.1vw, 10px);
+  text-decoration: none;
+  background-color: #f5f5f5;
+  margin: 5% 2%;
+  padding: 7% 7%;
+  border: 1pt solid #e9e9e9;
+}
+.sellers {
+  background-color: transparent;
+  background-color: #d7caca;
+  margin: 5% 2%;
+  padding: 7% 7%;
+  border: 1pt solid #b7a5a5;
+  font-size: max(1.1vw, 10px);
+}
+.sellers ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.sellers li {
+  margin: 5% 2%;
+}
+.sellers li p {
+  margin-top: 5%;
+}
+.sellers img {
+  float: left;
+  margin-right: 4%;
+}
+.changes ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  color: gray;
+}
+.changes li p {
+  margin: 5% 0px;
+}
+.changes span {
+  float: left;
+  font-size: max(2.5vw, 20px);
+  width: 25%;
+  margin-right: 10px;
+}
+.titleBlue {
+  background-color: #68a5f1;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Derecha*/
+.right {
+  width: 21%;
+}
+.rightBar {
+  background-color: transparent;
+}
