@@ -1,0 +1,264 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header nav {
+    padding: 20px;
+    color: white;
+    /*agregar un tamaño de fuente relativo*/
+    font-size: .875em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+header {
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+#logo {
+    /*font-size: 40px;*/
+    font-size: 2.5em;
+}
+
+#links {
+    font-size: 18px;
+}
+
+#links a {
+    margin: 15px;
+}
+
+a {
+    cursor: pointer;
+}
+
+a.button {
+    background-color: #a8a6a1;
+    padding: 10px 15px;
+    border: 2px solid #a8a6a1;
+    border-radius: 10px;
+}
+
+a.button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+header h1 {
+    /* cambiar el tamaño de la fuente que sea relativo*/
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+header h1 em {
+    /*font-size: 20px;*/
+    font-size: 1.25em;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+header h1 strong {
+    font-style: normal;
+    /*font-size: 68px;*/
+    font-size: 4.25em;
+    letter-spacing: 1px;
+}
+
+header h1 a {
+    /*font-size: 18px;
+    cambiar el tamaño de la fuente*/
+    font-size: 0.9em;
+}
+
+section {
+    margin: 75px 100px;
+    text-align: center;
+}
+
+
+#main p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 125px;
+    width: 70%;
+}
+
+#main h1 {
+    /*font-size: 38px;*/
+    font-size: 1.75em;
+}
+
+
+p {
+    /*line-height: 36px;*/
+    line-height: 2.25em;
+}
+
+footer {
+    background-color: rgb(45, 45, 45);
+    color: rgba(255, 255, 255, .8);
+    padding: 35px;
+    text-align: center;
+}
+
+footer p {
+    color: rgba(255, 255, 255, .4);
+}
+
+address {
+    font-style: normal;
+}
+
+#details div {
+    /*  width: calc(50% - 10px);
+      margin: 50px 0;*/
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#details img {
+    width: 100%;
+}
+
+#details h1 {
+    font-size: 38px;
+}
+
+#details div a.button {
+    color: white;
+}
+
+#details div a.button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+/*crear un menu para moviles*/
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+    #links {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+}
+
+/* Estilos para resoluciones de pantalla grandes */
+@media screen and (min-width: 1024px) {
+
+    /* Hacer que el encabezado y el pie de página tengan un ancho fijo */
+    header,
+    footer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Ajustar el ancho del contenido principal para dejar espacio para la barra lateral */
+    .main-content {
+        width: 760px;
+        float: left;
+    }
+
+    /* Estilos para la barra lateral */
+    .sidebar {
+        width: 240px;
+        float: right;
+    }
+}
+
+/* Estilos para resoluciones de pantalla medianas */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+    /* Hacer que el encabezado y el pie de página tengan un ancho fijo */
+    header,
+    footer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Ajustar el ancho del contenido principal para dejar espacio para la barra lateral */
+    .main-content {
+        width: 70%;
+        float: left;
+    }
+
+    /* Estilos para la barra lateral */
+    .sidebar {
+        width: 30%;
+        float: right;
+    }
+}
+
+/* Estilos para resoluciones de pantalla pequeñas */
+@media screen and (max-width: 767px) {
+
+    /* Ajustar el ancho del encabezado y el pie de página para ocupar todo el ancho disponible */
+    header,
+    footer {
+        font-size: 14px;
+        height: 300px;
+        line-height: 1.2;
+    }
+
+    header h1 strong {
+        font-size: 2em;
+        letter-spacing: 4px;
+    }
+
+    /* Ajustar el ancho del contenido principal para ocupar todo el ancho disponible */
+    .main-content {
+        width: 100%;
+        float: none;
+    }
+
+    /* Estilos para la barra lateral */
+    .sidebar {
+        width: 100%;
+        float: none;
+    }
+
+    #details {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 40px 10px;
+    }
+}
